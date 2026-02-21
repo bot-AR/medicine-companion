@@ -1,9 +1,6 @@
 import type { Metadata, Viewport } from 'next';
-import { Geist } from 'next/font/google';
 import './globals.css';
 import ClientProviders from './ClientProviders';
-
-const geist = Geist({ subsets: ['latin'], variable: '--font-geist' });
 
 export const metadata: Metadata = {
   title: 'Medicine Companion',
@@ -21,7 +18,7 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geist.variable} font-sans antialiased`}>
+      <body className="font-sans antialiased">
         <ClientProviders>{children}</ClientProviders>
       </body>
     </html>
