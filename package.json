@@ -1,0 +1,5 @@
+{
+  "name": "medicine-companion-root",
+  "private": true,
+  "workspaces": ["native", "web", "shared"]
+}
